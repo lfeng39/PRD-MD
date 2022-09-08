@@ -11,10 +11,10 @@
 # A+ Img - 970 & 600
 
 # MySql 
-*sudo /etc/init.d/mysql stop # stop mysql service
-*sudo mysqld_safe --skip-grant-tables & # start mysql without password
-*ps aux |grep mysql  /  killall mysqld mysqld_safe
-*mysql -uroot # connect to mysql
+<p>sudo /etc/init.d/mysql stop # stop mysql service</p>
+sudo mysqld_safe --skip-grant-tables & # start mysql without password
+ps aux |grep mysql  /  killall mysqld mysqld_safe
+mysql -uroot # connect to mysql
 
 # RunServer
 *nohup python3 manage.py runserver 142.82.22.68:8000 &
