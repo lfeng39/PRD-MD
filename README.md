@@ -9,3 +9,9 @@
 视频：15秒
 
 # A+ Img - 970 & 600
+
+# Service
+sudo /etc/init.d/mysql stop # stop mysql service
+sudo mysqld_safe --skip-grant-tables & # start mysql without password
+ps aux |grep mysql  /  killall mysqld mysqld_safe
+mysql -uroot # connect to mysql
