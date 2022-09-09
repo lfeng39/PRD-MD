@@ -18,3 +18,8 @@
 
 # RunServer
 <p>nohup python3 manage.py runserver 142.82.22.68:8000 &</p>
+
+# GIT
+<p>git fetch --all</p>
+<p>git reset --hard origin/分支名</p>
+<p>git pull</p>
