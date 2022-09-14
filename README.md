@@ -19,10 +19,10 @@ Brand Stories @1
 <p>mysql -uroot # connect to mysql</p>
 
 # test
-sudo /etc/init.d/mysql stop # stop mysql service
-sudo mysqld_safe --skip-grant-tables & # start mysql without password
-ps aux |grep mysql  /  killall mysqld mysqld_safe
-mysql -uroot # connect to mysql
+        sudo /etc/init.d/mysql stop # stop mysql service
+        sudo mysqld_safe --skip-grant-tables & # start mysql without password
+        ps aux |grep mysql  /  killall mysqld mysqld_safe
+        mysql -uroot # connect to mysql
 
 # RunServer
 <p>nohup python3 manage.py runserver 142.82.22.68:8000 &</p>
