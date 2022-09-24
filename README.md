@@ -26,6 +26,12 @@
 ## Brand Stories @1
         970 @ 600
 
+# Fonts
+        Baloo Da 2
+        Eras Bold ITC
+        Verdana
+        Arvo
+
 # MySql
         sudo /etc/init.d/mysql stop # stop mysql service
         sudo mysqld_safe --skip-grant-tables & # start mysql without password
