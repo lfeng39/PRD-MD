@@ -45,3 +45,7 @@
         git fetch --all
         git reset --hard origin/分支名
         git pull
+# SoftWare
+        Dummy Studio
+        Autodesk Fusion
+        selinc
