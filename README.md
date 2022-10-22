@@ -1,51 +1,26 @@
-# Listing Img - 1500 & 1500
-## 主图 @1
-        1500 @ 1500
-        白色背景主图
-## 场景 @3
-        1500 @ 1500
-## 标签 @3
-        1500 @ 1500
-        产品特性、产品特性、尺寸
-## 视频 @1
-        1500 @ 1500
-        15秒
+# E_trade V1.00
+### 功能详细：
+        1）首页，产品页，产品详情，关于我们
+        2）产品前端静态展示，站内链接互通，跳转逻辑流畅
+        3）构建购买链接跳转：Amazon Listing
+        4）数据维护：MySQL、csv
+        5）Html, CSS优化
+* PC端 移动端 布局优化
 
-# A+ Img
-## 大场景 @1
-        970 @ 600
-## 小场景 @3
-        300 @ 300
-## 大场景 @1
-        970 @ 600
-## 细节图 @3
-        300 @ 300
-## 大场景 @1
-        970 @ 600
-        礼物、送礼
-## Brand Stories @1
-        970 @ 600
+# E_trade V1.01
+### 功能详细：
+        1）注册：email, passwrod, country, ctiy, address, code, first_name, last_name
+        2）登录：email, passwrod
+        3）注册验证
+        4）登录验证
 
-# Fonts
-        Baloo Da 2
-        Eras Bold ITC
-        Verdana
-        Arvo
+# E_trade V1.02
+### 功能详细：
+        1）添加购物车功能
+        2）未登录状态下，添加购物车，跳转登录，登陆后跳转购物车
 
-# MySql
-        sudo /etc/init.d/mysql stop # stop mysql service
-        sudo mysqld_safe --skip-grant-tables & # start mysql without password
-        ps aux |grep mysql  /  killall mysqld mysqld_safe
-        mysql -uroot # connect to mysql
-
-# RunServer
-        nohup python3 manage.py runserver 142.82.22.68:8000 &
-
-# GIT
-        git fetch --all
-        git reset --hard origin/分支名
-        git pull
-# SoftWare
-        Dummy Studio
-        Autodesk Fusion
-        selinc
+# E_trade V1.03
+### 功能详细：
+        1）管理员账户
+        2）管理员后台操作界面
+        3）创建Listing
