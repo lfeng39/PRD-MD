@@ -45,6 +45,10 @@
         git fetch --all
         git reset --hard origin/分支名
         git pull
+        【放弃本地修改，直接覆盖】
+        git reset --hard
+        git pull
+        
 # SoftWare
         Dummy Studio
         Autodesk Fusion
