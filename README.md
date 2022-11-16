@@ -1,3 +1,20 @@
+Yakka Dee
+Didi's Day
+《小鼠波波》（Maisy）
+《Leap Frog：The Letter Factory》
+《Alphablocks》字母积木
+《鹬》（Piper）
+《penelope》《蓝色小考拉》
+趣味知知鸟
+米奇妙妙屋
+碰碰狐
+《Pocoyo》《小 P 优优》
+《Hey Duggee》
+《海底小纵队》
+变形警车珀利
+瑞奇宝宝
+布鲁伊
+
 # E_trade V1.00
 ### 功能详细：
         1）首页，产品页，产品详情，关于我们
