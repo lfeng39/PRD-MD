@@ -39,7 +39,11 @@
         mysql -uroot # connect to mysql
 
 # RunServer
-        nohup python3 manage.py runserver 142.82.22.68:8000 &
+        nohup python3 manage.py runserver 140.82.22.68:8000 &
+
+# Server
+        ssh root@ip
+        5u+GY]gaeus*k#z,
 
 # GIT
         git fetch --all
