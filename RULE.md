@@ -64,6 +64,20 @@
                 退出mysql：exit 命令
                 查看创建表的时候使用的sql语句：show create table 表名；
 
+        # DOS Tables
+        show databases;
+        use jal;
+        show tables;
+        # DOS delete data
+        delete from JAL_asininfo; (Query OK, 170 rows affected (0.008 sec))
+        
+
+
+        # about port(Error: That port is already in use.)
+        check: netstat -ntlp
+        ready: kill -9 PID
+        action: kill -9 pid_number
+
 # RunServer
         nohup python3 manage.py runserver 140.82.22.68:8000 &
 
