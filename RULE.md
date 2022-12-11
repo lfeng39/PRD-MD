@@ -33,10 +33,21 @@
         Arvo
 
 # MySql
+        # Install MySql
+                1) wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+                2) sudo apt install ./mysql-apt-config_0.8.24-1_all.deb
+                3) sudo apt update
+                4) sudo apt install mysql-server (pass password set)
+                5) sudo systemctl status mysql (check status)
+                6) sudo mysql_secure_installation (set password)
+                mysql -h 127.0.0.1 -P 3306 -u root
+
         # stop mysql service
         sudo /etc/init.d/mysql stop 
         # restart
         sudo /etc/init.d/mysql restart
+        # restart
+        sudo /etc/init.d/mysql start
         # start mysql without password
         sudo mysqld_safe --skip-grant-tables & 
         # progress
@@ -45,6 +56,14 @@
         killall mysqld mysqld_safe
         # connect to mysql / root is username
         mysql -u root -p 
+        # sss
+        sudo service mysql status
+        sudo service mysql stop
+        sudo service mysql start
+        sudo start mysql
+        sudo stop mysql
+        sudo restart mysql
+        sudo service mysql restart
 
         # DOS
                 DOS窗口进入数据库 mysql -uroot -p密码
@@ -70,20 +89,24 @@
         show tables;
         # DOS delete data
         delete from JAL_asininfo; (Query OK, 170 rows affected (0.008 sec))
-        
-
+        drop table JAL_asininfo;
 
         # about port(Error: That port is already in use.)
         check: netstat -ntlp
         ready: kill -9 PID
         action: kill -9 pid_number
 
+        # Log output is incomplete or unavailable
+        journalctl --vacuum-size=1G
+
 # RunServer
         nohup python3 manage.py runserver 140.82.22.68:8000 &
 
 # Server
-        ssh root@ip
+        ssh root@ip66.42.107.185 45.76.74.94
         5u+GY]gaeus*k#z,
+        Da@3_d}CjduNUN7H
+        8{dT%R#mXK=*r$mC
 
 # GIT
         git fetch --all
