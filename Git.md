@@ -16,7 +16,7 @@
         
 
 # stable-diffusion for mac
-        Step 1: Install Homebrew
+        ##Step 1: Install Homebrew
         First, we need to install Homebrew. Copy the following code:
                 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         
