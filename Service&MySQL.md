@@ -65,6 +65,18 @@
         # Log output is incomplete or unavailable
         journalctl --vacuum-size=1G
 
+# Django DB
+        迁移数据
+                python37 manage.py makemigrations
+                python37 manage.py migrate
+        终极办法
+                1）清空app > migrations 下面除_init_.py以外的数据文件
+                2）清空MySQL数据，甚至数据表，更甚至app数据库
+                3）清空models.py中的创建数据表的代码
+                4）执行：python37 manage.py makemigrations
+                5）仅恢复models.py中的创建数据表的代码
+                6）执行：python37 manage.py makemigrations
+
 # RunServer
         nohup python3 manage.py runserver 140.82.22.68:8000 &
 
