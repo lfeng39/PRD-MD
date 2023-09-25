@@ -17,15 +17,15 @@
 
 # stable-diffusion for mac
 ### Step 1: Install Homebrew
-        ###### First, we need to install Homebrew. Copy the following code:
+##### First, we need to install Homebrew. Copy the following code:
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         
 ### Step 2: Install Required Packages
-###### We need to install some more packages for this to work. Next, run the following command in terminal:
+##### We need to install some more packages for this to work. Next, run the following command in terminal:
         brew install cmake protobuf rust python@3.10 git wget
         
 ### Step 3: Install Stable Diffusion UI
-#### Now, we’ll install the stable diffusion UI. Type and execute the following command on terminal:
+##### Now, we’ll install the stable diffusion UI. Type and execute the following command on terminal:
         git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
 
 ### Step 4: Add Model Files
