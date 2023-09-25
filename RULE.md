@@ -124,7 +124,3 @@
                 git reset --hard
                 git pull
         
-# SoftWare
-        Dummy Studio
-        Autodesk Fusion
-        selinc
