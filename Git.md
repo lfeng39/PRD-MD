@@ -19,6 +19,7 @@
 ### Step 1: Install Homebrew
 ##### First, we need to install Homebrew. Copy the following code:
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        export PATH=/opt/homebrew/bin:$PATH
         
 ### Step 2: Install Required Packages
 ##### We need to install some more packages for this to work. Next, run the following command in terminal:
