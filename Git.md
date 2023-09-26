@@ -30,3 +30,7 @@
 
 ### Step 4: Add Model Files
 ##### Once the installation is complete, open the stable diffusion web UI folder
+
+### Step 5: Launch the Web UI
+##### In the terminal, type cd stable-diffusion-webui and then execute
+        ./webui.sh
