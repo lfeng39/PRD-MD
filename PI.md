@@ -1,8 +1,8 @@
 # Download Raspberry Pi OS
     https://www.raspberrypi.com/software/operating-systems/
-    Raspberry Pi OS with desktop
-    Raspberry Pi OS with desktop and recommended software
-    Raspberry Pi OS Lite
+        Raspberry Pi OS with desktop
+        Raspberry Pi OS with desktop and recommended software
+        Raspberry Pi OS Lite
     
 # Install Raspberry Pi OS using 
     ## Raspberry Pi Imager
@@ -26,7 +26,7 @@
     2) start install
 
 # SSH Pi
-## VNC
+###### VNC
     https://www.realvnc.com/en/connect/download/viewer/
 ## PuTTY
 
