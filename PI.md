@@ -31,3 +31,17 @@
 ###### PuTTY
 
 ###### Xshell
+
+# Connect PI with WI-FI
+###### add file SSH with no file type under folder boot
+###### add file wpa_supplicant.conf under folder boot
+    country=CN
+    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+    update_config=1
+    
+    network={
+    ssid="网络名称，使用英语，保留引号"
+    psk="网络密码，保留引号"
+    key_mgmt=WPA-PSK
+    priority=1
+    } 
