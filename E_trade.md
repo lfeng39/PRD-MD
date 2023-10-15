@@ -49,9 +49,10 @@ Didi's Day
         4）登录验证
 
 # E_trade V1.02
-### 功能详细：
-        1）添加购物车功能
-        2）未登录状态下，添加购物车，跳转登录，登陆后跳转购物车
+### 功能更新：
+        1）同步 asininfo | listing | productdescription | productinfo 表中的asin数量
+        2）新增 edit 编辑 listing 功能，编辑完成后，数据提交到 listing | productdescription | productinfo 三张表中，
+        3）成功页面提示成功或失败，并提供 view | again | go back to listing 链接去对应的页面
 
 # E_trade V1.03
 ### 功能详细：
