@@ -6,6 +6,9 @@
                 git add .
                 git commit -m 'dir'
                 git push -u origin branchName
+        new branch & push with new branch
+                git branch branchName
+                git checkout branchName
         other
                 git fetch --all
                 git reset --hard origin/分支名
