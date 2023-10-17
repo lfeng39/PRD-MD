@@ -1,1 +1,6 @@
-
+if request.method == 'GET' 'POST'
+  判断request请求类型
+request.GET.get('asin')
+  获取get请求url中，问号后面的数据(部分请求方式）：/JAL/products?asin=B0BM44ST75
+request.POST.get('asin')
+  通过name获取post表单中的内容：<input type="text" name="asin" id="" value="{{ asin.asin }}" />
