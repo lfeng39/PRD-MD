@@ -6,4 +6,5 @@
 ###### pcb
         Cut2D Desktop
         Sprint-Layout
+        Wegstr CNC (Wegstr.com)
         Altium Dsigner
