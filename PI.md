@@ -36,6 +36,9 @@
 
         https://www.realvnc.com/en/connect/download/viewer/
 - PuTTY
+install PuTTY for Mac using
+
+        brew install putty or port install putty (see below). 
 - Xshell
 
 # Connect PI with WI-FI
