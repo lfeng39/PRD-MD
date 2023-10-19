@@ -1,12 +1,16 @@
-# Install MySql
 Source for Mysql:
 
         wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
         sudo apt install ./mysql-apt-config_0.8.24-1_all.deb
         rm mysql-apt-config_0.8.24-1_all.deb
-        
+Install MySql
+
         sudo apt update
         sudo apt install mysql-server
+Connect to mysql / root is username
+
+        mysql -u root -p
+        sudo mysql
 Check Status
 
         sudo systemctl status mysql
@@ -14,27 +18,23 @@ Set PassWord
 
         sudo mysql_secure_installation
         mysql -h 127.0.0.1 -P 3306 -u root
-Connect to mysql / root is username
+Stop Mysql Service
 
-        mysql -u root -p
-        sudo mysql
-stop mysql service
         sudo /etc/init.d/mysql stop 
-restart
+Start mysql without password
+
+        sudo mysqld_safe --skip-grant-tables & 
+Restart
 
         sudo /etc/init.d/mysql restart
         sudo /etc/init.d/mysql start
-start mysql without password
-
-        sudo mysqld_safe --skip-grant-tables & 
-progress
+Progress
 
         ps aux |grep mysql
-kill progress
+Pill Progress
 
         killall mysqld mysqld_safe
-
-# sss
+Sudo
 
         sudo service mysql status
         sudo service mysql stop
@@ -43,13 +43,16 @@ kill progress
         sudo stop mysql
         sudo restart mysql
         sudo service mysql restart
-# DOS
+# DOS DB
 
         Maria[]> show databases；
         Maria[]> create database jal；
         Maria[]> use jal；
                 Maria[jal]> 
         Maria[jal]> show tables；
+        Maria[jal]> delete from JAL_asininfo; (Query OK, 170 rows affected (0.008 sec))
+        Maria[jal]> drop table JAL_asininfo;
+
 数据库初始化执行sql文件：source +sql文件路径（直接拖就行）
 删除数据库：drop database 数据库名字；
 查看表结构：desc+表名；
@@ -62,13 +65,6 @@ set names gbk;）
 退出mysql：exit 命令
 查看创建表的时候使用的sql语句：show create table 表名；
 
-# DOS Tables
-show databases;
-use jal;
-show tables;
-# DOS delete data
-delete from JAL_asininfo; (Query OK, 170 rows affected (0.008 sec))
-drop table JAL_asininfo;
 
 # about port(Error: That port is already in use.)
 check: netstat -ntlp
