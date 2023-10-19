@@ -3,9 +3,10 @@ Source for Mysql:
         wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
         sudo apt install ./mysql-apt-config_0.8.24-1_all.deb
         rm mysql-apt-config_0.8.24-1_all.deb
-Install MySql
+Install MySql & Update Soft
 
         sudo apt update
+        sudo apt upgrade
         sudo apt install mysql-server
 Connect to mysql / root is username
 
