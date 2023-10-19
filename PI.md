@@ -79,7 +79,21 @@
 
         https://wiki.diustou.com/cn//树莓派系列教程：更换软件源
 
-# Install DB
+# Install Python3.7.4
+Download 3.7.4 tgz
+
+        wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
+Path on Pi
+
+        /home/lfeng/Python-3.7.4
+Install
+
+        cd Python-3.7.4
+        [lfeng@raspberrypi:~/Python-3.7.4 $ sudo ./configure && sudo make && sudo make install
+
+        waitting...
+        Successfully!
+        
 
 
 
