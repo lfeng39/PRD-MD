@@ -54,7 +54,7 @@
         priority=1
         } 
 
-# Check OS Version
+# Check PI OS Version
         cat /etc/os-release
 
         PRETTY_NAME="Raspbian GNU/Linux 11 (bullseye)"
@@ -67,7 +67,18 @@
         HOME_URL="http://www.raspbian.org/"
         SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
         BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
+
+# Check Soft Sources
+        > cd /etc/aapt
+        > dir
         
+        apt.conf.d   listchanges.conf	 preferences.d	sources.list.d	trusted.gpg~
+        auth.conf.d  listchanges.conf.d  sources.list	trusted.gpg	trusted.gpg.d
+
+        > cat sources.list
+
+        https://wiki.diustou.com/cn//树莓派系列教程：更换软件源
+
 # Install DB
 
 
