@@ -53,3 +53,26 @@
         key_mgmt=WPA-PSK
         priority=1
         } 
+
+# Check OS Version
+        cat /etc/os-release
+
+        PRETTY_NAME="Raspbian GNU/Linux 11 (bullseye)"
+        NAME="Raspbian GNU/Linux"
+        VERSION_ID="11"
+        VERSION="11 (bullseye)"
+        VERSION_CODENAME=bullseye
+        ID=raspbian
+        ID_LIKE=debian
+        HOME_URL="http://www.raspbian.org/"
+        SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
+        BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
+        
+# Install DB
+
+
+
+
+
+
+
