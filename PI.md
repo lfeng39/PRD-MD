@@ -93,11 +93,35 @@ Install
 
         waitting...
         Successfully!
-        
 
+# Make 软连接
+check 软连接
 
+        sudo ls -a /usr/bin/ |grep python
 
+        arm-linux-gnueabihf-python3.9-config
+        arm-linux-gnueabihf-python3-config
+        python
+        python3
+        python3.7
+        python3.9
+        python3.9-config
+        python3-config
 
+delete 原python软连接
 
+        sudo rm /usr/bin/python
 
+        arm-linux-gnueabihf-python3.9-config
+        arm-linux-gnueabihf-python3-config
+        --python--
+        python3
+        python3.7
+        python3.9
+        python3.9-config
+        python3-config
+
+create 软链接
+
+        sudo ln -s /usr/local/bin/python3.7 /usr/bin/python
 
