@@ -1,9 +1,9 @@
-Source for Mysql:
+Download & Install Mysql
 
         wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
         sudo apt install ./mysql-apt-config_0.8.24-1_all.deb
         rm mysql-apt-config_0.8.24-1_all.deb
-Install MySql & Update Soft
+Update Soft
 
         sudo apt update
         sudo apt upgrade
