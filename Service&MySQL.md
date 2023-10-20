@@ -16,7 +16,7 @@ Connect to mysql / root is username
 
         mysql -u root -p
         sudo mysql
-For Access
+For Access in SQL language
 
         GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY '12' WITH GRANT OPTION;
 Check Status
