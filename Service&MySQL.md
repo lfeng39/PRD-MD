@@ -1,3 +1,7 @@
+
+使用 APT 安装 MariaDB 软件包
+
+        https://runebook.dev/zh/docs/mariadb/installing-mariadb-deb-files/index#installing-mariadb-packages-with-apt
 Download & Install Mysql
 
         wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
