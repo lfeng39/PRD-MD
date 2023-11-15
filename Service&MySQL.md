@@ -102,3 +102,9 @@ ssh root@ip66.42.107.185 45.76.74.94
 5u+GY]gaeus*k#z,
 Da@3_d}CjduNUN7H
 8{dT%R#mXK=*r$mC
+
+# Ngrok
+install
+        https://dashboard.ngrok.com/get-started/setup
+start server
+         ./ngrok http 8000
