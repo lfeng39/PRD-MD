@@ -86,6 +86,12 @@
 
         https://wiki.diustou.com/cn//树莓派系列教程：更换软件源
 
+        '''
+        run, after update sources.list
+        '''
+        > sudo apt-get update
+        > sudo apt-get upgrade
+
 # Install Python3.7.4
 Download 3.7.4 tgz
 
