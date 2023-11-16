@@ -75,7 +75,14 @@
         apt.conf.d   listchanges.conf	 preferences.d	sources.list.d	trusted.gpg~
         auth.conf.d  listchanges.conf.d  sources.list	trusted.gpg	trusted.gpg.d
 
+        '''
+        check
+        '''
         > cat sources.list
+        '''
+        edit
+        '''
+        > nano sources.list
 
         https://wiki.diustou.com/cn//树莓派系列教程：更换软件源
 
