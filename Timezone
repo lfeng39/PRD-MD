@@ -1,0 +1,9 @@
+# Set RTC
+## check system time
+  timedatectl
+## system clock synchronized: no -> yes
+  sudo systemctl restart systemd-timesyncd
+## RTC in local: yes / no
+  timedatectl set-local-rtc yes
+## Time zone: ETC/UTC -> Asia/Shanghai
+  sudo timedatectl set-timezone 'Asia/Shanghai'
