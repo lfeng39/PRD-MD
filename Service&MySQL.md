@@ -30,6 +30,7 @@ Set PassWord
 
         sudo mysql_secure_installation
         mysql -h 127.0.0.1 -P 3306 -u root
+        MariaDB [mysql]> set password for root@localhost = password('12820839');
 Stop Mysql Service
 
         sudo /etc/init.d/mysql stop 
