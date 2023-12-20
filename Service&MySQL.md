@@ -1,3 +1,7 @@
+# Vultr
+108.61.222.8
+M7v@$G%XRb(d,T-*
+
 
 使用 APT 安装 MariaDB 软件包
 
