@@ -101,7 +101,7 @@ journalctl --vacuum-size=1G
 
 # RunServer
 nohup python3 manage.py runserver 140.82.22.68:8000 &
-# Close fire wall
+# About fire wall, and relax port
 iptables -I INPUT -p tcp --dport 8000 -j ACCEPT
 # Server
 ssh root@ip66.42.107.185 45.76.74.94
