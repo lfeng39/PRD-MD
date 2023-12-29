@@ -1,23 +1,24 @@
 # use the function that in another function body, has two method
-function body()
-{
-  function chlid(x, y)
+## method 1
+  function body()
   {
-    console.log('hello world', x * y)
+    function chlid(x, y)
+    {
+      console.log('hello world', x * y)
+    }
+    return chlid
   }
-  return chlid
-}
-body = body() / chlid = body()
-body(2, 3) / chlid(2, 3)
-// output: hello world 6
-
-function body()
-{
-  function chlid(x, y)
+  body = body() / chlid = body()
+  body(2, 3) / chlid(2, 3)
+  // output: hello world 6
+## method 2
+  function body()
   {
-    console.log('hello world', x * y)
+    function chlid(x, y)
+    {
+      console.log('hello world', x * y)
+    }
+    chlid(2, 3)
   }
-  chlid(2, 3)
-}
-body(2, 3)
-// output: hello world 6
+  body(2, 3)
+  // output: hello world 6
