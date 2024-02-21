@@ -3,6 +3,14 @@
 M7v@$G%XRb(d,T-*
 
 # Deployment service
+## Connect Server
+### win:xshell***** | macos:terminal*
+#### ssh root@ip
+## Update Server Soft
+
+        sudo apt update
+        sudo apt upgrade
+        sudo apt install mysql-server
 ## install python==3.9/3.10
 ## install Django==4.2/5.0 | Flask | nodejs
 ## install MySQL | mysqlclient | MariaDB
@@ -15,17 +23,13 @@ Debian 11上安装'mysqlclient'出问题，尝试先安装MySQL依赖包
 
         https://runebook.dev/zh/docs/mariadb/installing-mariadb-deb-files/index#installing-mariadb-packages-with-apt
 Download & Install Mysql
-
+        downloade
         wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
-        
+        install
         sudo apt install ./mysql-apt-config_0.8.24-1_all.deb
-        
+        remove
         rm mysql-apt-config_0.8.24-1_all.deb
-Update Soft
 
-        sudo apt update
-        sudo apt upgrade
-        sudo apt install mysql-server
 Connect to mysql / root is username
 
         mysql -u root -p
