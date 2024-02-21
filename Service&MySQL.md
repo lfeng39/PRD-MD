@@ -4,8 +4,9 @@ M7v@$G%XRb(d,T-*
 
 # Deployment service
 ## Connect Server
-### win:xshell***** | macos:terminal*
-#### ssh root@ip
+        win:xshell***** | macos:terminal*
+        
+        ssh root@ip
 ## Update Server Soft
 
         sudo apt update
