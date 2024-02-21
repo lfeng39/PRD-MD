@@ -2,16 +2,18 @@
 108.61.222.8
 M7v@$G%XRb(d,T-*
 
-Debian 11上安装'mysqlclient'出问题，尝试先安装MySQL依赖包：
-        sudo apt-get install default-libmysqlclient-dev
+Debian 11上安装'mysqlclient'出问题，尝试先安装MySQL依赖包
 
+        sudo apt-get install default-libmysqlclient-dev
 使用 APT 安装 MariaDB 软件包
 
         https://runebook.dev/zh/docs/mariadb/installing-mariadb-deb-files/index#installing-mariadb-packages-with-apt
 Download & Install Mysql
 
         wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+        
         sudo apt install ./mysql-apt-config_0.8.24-1_all.deb
+        
         rm mysql-apt-config_0.8.24-1_all.deb
 Update Soft
 
