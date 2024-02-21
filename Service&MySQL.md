@@ -15,7 +15,6 @@ Update Server Soft
 
         sudo apt update
         sudo apt upgrade
-        sudo apt install mysql-server
 ## install python==3.9/3.10
 ## install Django==4.2/5.0 | Flask | nodejs
         pip install Django==4.2
@@ -23,17 +22,22 @@ Update Server Soft
 Debian 11上安装'mysqlclient'出问题，尝试先安装MySQL依赖包
 
         sudo apt-get install default-libmysqlclient-dev
-使用 APT 安装 MariaDB 软件包
+Install MariaDB(packages) by what???
 
         https://runebook.dev/zh/docs/mariadb/installing-mariadb-deb-files/index#installing-mariadb-packages-with-apt
-Download & Install Mysql
-        downloade
-        wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
-        install
-        sudo apt install ./mysql-apt-config_0.8.24-1_all.deb
-        remove
-        rm mysql-apt-config_0.8.24-1_all.deb
+Install mysql-server by apt
 
+        sudo apt install mysql-server
+Download & Install Mysql
+* downloade
+        
+        wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+> install by apt
+        
+        sudo apt install ./mysql-apt-config_0.8.24-1_all.deb
+- remove
+- 
+        rm mysql-apt-config_0.8.24-1_all.deb
 Connect to mysql / root is username
 
         mysql -u root -p
