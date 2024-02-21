@@ -2,11 +2,11 @@
 108.61.222.8
 M7v@$G%XRb(d,T-*
 
-Deployment service
-* install python==3.9/3.10
-* install Django==4.2/5.0 | Flask | nodejs
-* install MySQL | mysqlclient | MariaDB
-* * create table
+# Deployment service
+## install python==3.9/3.10
+## install Django==4.2/5.0 | Flask | nodejs
+## install MySQL | mysqlclient | MariaDB
+### create table
 
 Debian 11上安装'mysqlclient'出问题，尝试先安装MySQL依赖包
 
