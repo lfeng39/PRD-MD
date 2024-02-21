@@ -18,6 +18,23 @@ Update Server Soft
 ## install python==3.9/3.10
 ## install Django==4.2/5.0 | Flask | nodejs
         pip install Django==4.2
+## Django DB
+迁移数据
+        python37 manage.py makemigrations
+        python37 manage.py migrate
+终极办法
+        1）清空app > migrations 下面除_init_.py以外的数据文件
+        2）清空MySQL数据，甚至数据表，更甚至app数据库
+        3）清空models.py中的创建数据表的代码
+        4）执行：python37 manage.py makemigrations
+        5）仅恢复models.py中的创建数据表的代码
+        6）执行：python37 manage.py makemigrations
+
+## RunServer
+        nohup python3 manage.py runserver 140.82.22.68:8000 &
+## About fire wall, and relax port
+        iptables -I INPUT -p tcp --dport 8000 -j ACCEPT
+
 ## install MySQL | mysqlclient | MariaDB
 Install 'mysqlclient' on Debian 11 with any error, try install MySQL dependency package first
 
@@ -104,35 +121,30 @@ set names gbk;）
 查看创建表的时候使用的sql语句：show create table 表名；
 
 
-# about port(Error: That port is already in use.)
-check: netstat -ntlp
-ready: kill -9 PID
-action: kill -9 pid_number
+about port(Error: That port is already in use.)
 
-# Log output is incomplete or unavailable
-journalctl --vacuum-size=1G
+        check: netstat -ntlp
+        ready: kill -9 PID
+        action: kill -9 pid_number
 
-# Django DB
-迁移数据
-        python37 manage.py makemigrations
-        python37 manage.py migrate
-终极办法
-        1）清空app > migrations 下面除_init_.py以外的数据文件
-        2）清空MySQL数据，甚至数据表，更甚至app数据库
-        3）清空models.py中的创建数据表的代码
-        4）执行：python37 manage.py makemigrations
-        5）仅恢复models.py中的创建数据表的代码
-        6）执行：python37 manage.py makemigrations
+Log output is incomplete or unavailable
 
-# RunServer
-nohup python3 manage.py runserver 140.82.22.68:8000 &
-# About fire wall, and relax port
-iptables -I INPUT -p tcp --dport 8000 -j ACCEPT
-# Server
-ssh root@ip66.42.107.185 45.76.74.94
-5u+GY]gaeus*k#z,
-Da@3_d}CjduNUN7H
-8{dT%R#mXK=*r$mC
+        journalctl --vacuum-size=1G
+
+# Nginx
+## Install Nginx
+        sudo apt-get update
+        sudo apt-get install nginx
+
+## Set Nginx
+        server {
+            listen 80 default_server;
+            listen [::]:80 default_server;
+        
+            # 其他配置...
+        }
+
+        sudo service nginx restart
 
 # Ngrok
 install
