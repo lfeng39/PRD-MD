@@ -38,8 +38,16 @@ RunServer
 About fire wall, and relax port
 
         iptables -I INPUT -p tcp --dport 8000 -j ACCEPT
+## Github ssh_key
+Create SSH Key
 
-## install MySQL | mysqlclient | MariaDB
+        ssh-keygen -t rsa -b 4096 -C "lf39@666.com"
+
+Check and Copy SSH Key to Github
+
+        cat ~/.ssh/id_rsa.pub
+
+## Install MySQL | mysqlclient | MariaDB
 Install 'mysqlclient' on Debian 11 with any error, try install MySQL dependency package first
 
         sudo apt-get install default-libmysqlclient-dev
