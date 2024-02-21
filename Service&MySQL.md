@@ -1,6 +1,7 @@
-# Vultr
-108.61.222.8
-M7v@$G%XRb(d,T-*
+# Server Example
+        Vultr
+        Debian 11: LittleKris Chicago
+        Debian 11: JAL_3.9kr Dallas
 
 # Deployment service
 ## Connect Server
