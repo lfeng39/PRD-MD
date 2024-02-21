@@ -2,6 +2,8 @@
 108.61.222.8
 M7v@$G%XRb(d,T-*
 
+Debian 11上安装'mysqlclient'出问题，尝试先安装MySQL依赖包：
+        sudo apt-get install default-libmysqlclient-dev
 
 使用 APT 安装 MariaDB 软件包
 
