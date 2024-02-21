@@ -5,20 +5,19 @@
 
 # Deployment service
 ## Connect Server
-### connect tools
+connect tools
         win:xshell***** | macos:terminal*
-### connect modths
+connect modths
         ssh root@ip
-## Update Server Soft
+Update Server Soft
 
         sudo apt update
         sudo apt upgrade
         sudo apt install mysql-server
 ## install python==3.9/3.10
 ## install Django==4.2/5.0 | Flask | nodejs
+        pip install Django==4.2
 ## install MySQL | mysqlclient | MariaDB
-### create table
-
 Debian 11上安装'mysqlclient'出问题，尝试先安装MySQL依赖包
 
         sudo apt-get install default-libmysqlclient-dev
