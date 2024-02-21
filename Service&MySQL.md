@@ -142,13 +142,22 @@ Log output is incomplete or unavailable
 
 ## Set Nginx
         server {
-            listen 80 default_server;
-            listen [::]:80 default_server;
+            listen 80;
+            server_name www.littlekris.com;
         
-            # 其他配置...
+            location / {
+                proxy_pass http://0.0.0.0:8000;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+            }
         }
 
-        sudo service nginx restart
+        sudo systemctl start nginx | sudo service restart nginx | sudo systemctl restart nginx | sudo systemctl status nginx
+
+## Check fire wall
+        sudo ufw allow 80
 
 # Ngrok
 install
