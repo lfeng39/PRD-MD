@@ -6,8 +6,10 @@
 # Deployment service
 ## Connect Server
 connect tools
+
         win:xshell***** | macos:terminal*
-connect modths
+connect method
+
         ssh root@ip
 Update Server Soft
 
