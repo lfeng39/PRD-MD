@@ -19,7 +19,7 @@ Update Server Soft
 ## install Django==4.2/5.0 | Flask | nodejs
         pip install Django==4.2
 ## install MySQL | mysqlclient | MariaDB
-Debian 11上安装'mysqlclient'出问题，尝试先安装MySQL依赖包
+Install 'mysqlclient' on Debian 11 with any error, try install MySQL dependency package first
 
         sudo apt-get install default-libmysqlclient-dev
 Install MariaDB(packages) by what???
@@ -29,30 +29,41 @@ Install mysql-server by apt
 
         sudo apt install mysql-server
 Download & Install Mysql
-* downloade
+> downloade
         
         wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
 > install by apt
         
         sudo apt install ./mysql-apt-config_0.8.24-1_all.deb
-- remove
-- 
+> remove
+
         rm mysql-apt-config_0.8.24-1_all.deb
-Connect to mysql / root is username
+Connect to DB
 
-        mysql -u root -p
-        sudo mysql
-For Access in SQL language
+        mysql -u root -p | sudo mysql | mysql
+Create User
 
-        GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY '12' WITH GRANT OPTION;
-Check Status
+        CREATE USER 'root'@'localhost' IDENTIFIED BY 'insert_password';
+Authorize
 
-        sudo systemctl status mysql
+        GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'insert_password' WITH GRANT OPTION;
+DOS DB
+
+        Maria[]> show databases；
+        Maria[]> create database jal；
+        Maria[]> use jal；
+                Maria[jal]> 
+        Maria[jal]> show tables；
+        Maria[jal]> delete from JAL_asininfo; (Query OK, 170 rows affected (0.008 sec))
+        Maria[jal]> drop table JAL_asininfo;
 Set PassWord
 
         sudo mysql_secure_installation
         mysql -h 127.0.0.1 -P 3306 -u root
         MariaDB [mysql]> set password for root@localhost = password('12820839');
+Check Status
+
+        sudo systemctl status mysql
 Stop Mysql Service
 
         sudo /etc/init.d/mysql stop 
@@ -78,15 +89,7 @@ Sudo
         sudo stop mysql
         sudo restart mysql
         sudo service mysql restart
-# DOS DB
 
-        Maria[]> show databases；
-        Maria[]> create database jal；
-        Maria[]> use jal；
-                Maria[jal]> 
-        Maria[jal]> show tables；
-        Maria[jal]> delete from JAL_asininfo; (Query OK, 170 rows affected (0.008 sec))
-        Maria[jal]> drop table JAL_asininfo;
 
 数据库初始化执行sql文件：source +sql文件路径（直接拖就行）
 删除数据库：drop database 数据库名字；
