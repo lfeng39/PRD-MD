@@ -15,8 +15,8 @@ Update Server Soft
 
         sudo apt update
         sudo apt upgrade
-## install python==3.9/3.10
-## install Django==4.2/5.0 | Flask | nodejs
+## Install python==3.9/3.10
+## Install Django==4.2/5.0 | Flask | nodejs
         pip install Django==4.2
 Django DB
 > 迁移数据
@@ -38,6 +38,7 @@ RunServer
 About fire wall, and relax port
 
         iptables -I INPUT -p tcp --dport 8000 -j ACCEPT
+        
 ## Github ssh_key
 Create SSH Key
 
@@ -143,7 +144,24 @@ Log output is incomplete or unavailable
 
         journalctl --vacuum-size=1G
 
-# Nginx
+# Run Service
+## run node or django service
+start service
+
+        nohup node server.js & | nohup python manage.py runserver 0.0.0.0:8000 &
+
+## run python service
+
+## run node service
+install pm2
+
+        pm2 start server.js
+
+check running service
+
+        pm2 list
+
+# Nginx run Server
 ## Install Nginx
         sudo apt-get update
         sudo apt-get install nginx
@@ -167,8 +185,10 @@ Log output is incomplete or unavailable
 ## Check fire wall
         sudo ufw allow 80
 
-# Ngrok
+# Ngrok run PI
 install
+
         https://dashboard.ngrok.com/get-started/setup
 start server
+
          ./ngrok http 8000
