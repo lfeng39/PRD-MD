@@ -12,7 +12,7 @@ check env value
 
     echo $key
 
-set env
+set env (temp, closed the shell, env invliad)
 
     export key='value'
 
