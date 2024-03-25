@@ -1,5 +1,6 @@
 # Android TV run on Raspberry PI
 need 3 files, OS file, resize memorry file and google apps file
+
 download OS file
 
     LineageOS 20 Android TV - KonstaKANG (Android 13)
