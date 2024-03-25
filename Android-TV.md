@@ -27,5 +27,5 @@ install apk step
     run cmd
     cd C:/adb
     C:/adb adb connect pi-ip (check TV and config)
-    C:/adb adn install xxx.apk
+    C:/adb adb install xxx.apk
     
