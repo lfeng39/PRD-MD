@@ -22,9 +22,8 @@ download SDK Platform-Tools for Windows
 
 install apk step
     
-    unzip & rename 'platform-tools-latest-windows.zip'
-    rename to 'adb'
-    move to C:/
+    unzip 'platform-tools-latest-windows.zip' & rename to 'adb'
+    move the 'adb' to root of C:/
     run cmd
     cd C:/adb
     C:/adb adb connect pi-ip (check TV and config)
