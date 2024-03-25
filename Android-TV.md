@@ -15,8 +15,9 @@ google apps file GET Google play & store
     https://github.com/MindTheGapps/13.0.0-arm64-ATV/releases/tag/MindTheGapps-13.0.0-arm64-ATV-20240311_051531
 
 # Install apk into Android TV by adb
-Download SDK Platform-Tools for Windows
+download SDK Platform-Tools for Windows
 
+    platform-tools-latest-windows.zip
     https://developer.android.com/tools/releases/platform-tools
 
 install apk step
