@@ -82,8 +82,9 @@ DOS DB
         Maria[]> show databases；
         Maria[]> create database jal；
         Maria[]> use jal；
-                Maria[jal]> 
+        Maria[jal]> 
         Maria[jal]> show tables；
+        Maria[jal]> select * from JAL_account;
         Maria[jal]> delete from JAL_asininfo; (Query OK, 170 rows affected (0.008 sec))
         Maria[jal]> drop table JAL_asininfo;
 Set PassWord
