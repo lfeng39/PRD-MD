@@ -1,3 +1,15 @@
+# Server Connect Git by SSH
+- Generate SSH key on Server
+
+          ssh-keygen -t ed25519 -C "your_email@example.com"
+- key save in pub, check it by cat
+  
+        cat ~/.ssh/id_ed25519.pub
+- copy key and paste to git -> settings ->
+  
+        ssh-ed25519 %&*%^&*(*(*&*T*H(U*&TG
+          
+
 # GIT
 - git get code step
         git clone url
