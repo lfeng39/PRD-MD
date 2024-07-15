@@ -22,14 +22,14 @@ Update Server Soft
 ## Install Nodejs npm
 1) update soft
 
-        > sudo apt-get update
-        > sudo apt-get upgrade
+        sudo apt-get update
+        sudo apt-get upgrade
 3) install
 
-        > sudo apt-get install nodejs npm
+        sudo apt-get install nodejs npm
 5) check version
 
-        > nodejs -v | npm -v
+        nodejs -v | npm -v
 7) install React package
 
         npm install webpack webpack-cli --save-dev
@@ -38,42 +38,25 @@ Update Server Soft
         if some error out when 'npm run build', try run '5)'th first
 
 
-Django DB
-- 迁移数据
+## Django DB / makemigrations & migrate
+- makemigrations & migrate
 
         python37 manage.py makemigrations | python37 manage.py makemigrations app_name
         python37 manage.py migrate
 - pay attention
 
-        if tip 1146, that is smoeone table in db does not exsit, check any *.py, maybe models.py has been useing, it is earlier run than makemigrations / migrate.
+        if tip 1146, that is smoeone table in db does not exsit, check any *.py
+        maybe models.py has been useing, it is earlier run than makemigrations / migrate.
   
-- 终极办法
 
-        1) 清空app > migrations 下面除_init_.py以外的数据文件
-        2) 清空MySQL数据，甚至数据表，更甚至app数据库
-        3) 清空models.py中的创建数据表的代码
-        4) 执行：python37 manage.py makemigrations
-        5) 仅恢复models.py中的创建数据表的代码
-        6) 执行：python37 manage.py makemigrations
-
-RunServer
+## RunServer
+runserver
 
         nohup python3 manage.py runserver 140.82.22.68:8000 &
 About fire wall, and relax port
 
         iptables -I INPUT -p tcp --dport 8000 -j ACCEPT
         
-## Github ssh_key
-Create SSH Key by commend, and enter enter enter, dont change folder
-
-        // ssh-keygen -t rsa -b 4096 -C "lf39@666.com"
-        ssh-keygen -t ed25519 -C "your_email@example.com"
-
-
-Check and Copy SSH Key to Github -> settings
-
-        // cat ~/.ssh/id_rsa.pub
-        cat ~/.ssh/id_ed25519.pub
 
 ## Install MySQL | mysqlclient | MariaDB
 Install 'mysqlclient' on Debian 11 with any error, try install MySQL dependency package first
@@ -148,18 +131,6 @@ Sudo
         sudo restart mysql
         sudo service mysql restart
 
-
-数据库初始化执行sql文件：source +sql文件路径（直接拖就行）
-删除数据库：drop database 数据库名字；
-查看表结构：desc+表名；
-查看表中数据：select * from 表名；（当在DOS界面中显示MYSQL数据库中的表的信息时，可能会出现中文乱码问题，出现是原因是因为DOS窗口默认字符集为GBK格式，如果当前MYSQL设置的默认编码格式非GBK格式，则可能会出现乱码。
-解决方法：在输出信息前，执行以下语句：
-set names gbk;）
-查询当前使用的哪个数据库：select database（）；也可直接再use一下需要的数据库；
-查询mysql的版本号：select version（）；
-结束一条语句：\c 命令
-退出mysql：exit 命令
-查看创建表的时候使用的sql语句：show create table 表名；
 
 
 about port(Error: That port is already in use.)
