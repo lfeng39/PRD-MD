@@ -18,6 +18,19 @@ Update Server Soft
 ## Install python==3.9/3.10
 ## Install Django==4.2/5.0 | Flask | nodejs
         pip install Django==4.2
+
+## Install Nodejs npm
+        1) update soft
+                > sudo apt-get update
+                > sudo apt-get upgrade
+        3) sudo apt-get install nodejs npm
+        4) check version
+                > nodejs -v | npm -v
+        5) install React package
+                npm install webpack webpack-cli --save-dev
+
+
+
 Django DB
 > 迁移数据
 
