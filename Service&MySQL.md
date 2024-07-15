@@ -20,22 +20,27 @@ Update Server Soft
         pip install Django==4.2
 
 ## Install Nodejs npm
-### update soft
+1) update soft
         > sudo apt-get update
         > sudo apt-get upgrade
-### sudo apt-get install nodejs npm
-### check version
+2) install
+        > sudo apt-get install nodejs npm
+4) check version
         > nodejs -v | npm -v
 5) install React package
         npm install webpack webpack-cli --save-dev
-
+6) pay attenion
+        if some error out when 'npm run build', try run '5)'th first
 
 
 Django DB
 - 迁移数据
 
-        python37 manage.py makemigrations
+        python37 manage.py makemigrations | python37 manage.py makemigrations app_name
         python37 manage.py migrate
+- pay attention
+        if tip 1146, that is smoeone table in db does not exsit, check any *.py, maybe models.py has been useing, it is earlier run than makemigrations / migrate.
+  
 - 终极办法
 
         1) 清空app > migrations 下面除_init_.py以外的数据文件
