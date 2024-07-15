@@ -1,36 +1,47 @@
 # Server Connect Git by SSH
 - Generate SSH key on Server
 
+          // ssh-keygen -t rsa -b 4096 -C "lf39@666.com"
           ssh-keygen -t ed25519 -C "your_email@example.com"
 - key save in pub, check it by cat
-  
-        cat ~/.ssh/id_ed25519.pub
+
+          // cat ~/.ssh/id_rsa.pub
+          cat ~/.ssh/id_ed25519.pub
 - copy key and paste to git -> settings ->
   
         ssh-ed25519 %&*%^&*(*(*&*T*H(U*&TG
-          
+       
 
 # GIT
-- git get code step
+- clone
         git clone url
-- git post code step
+- pull & push
 
         git pull origin branchName
         git add .
         git commit -m 'dir'
-        git push -u origin branchName
-- new branch & push with new branch
+        git push origin branchName
+- branch
+          check
 
-        git branch branchName
-        git checkout branchName
+                    git branch
+          create
+
+                    git branch branch_name
+          change branch
+
+                    git checkout branch_name
+          delete branch
+
+                    git branch -D branch_name
 - other
 
         git fetch --all
-        git reset --hard origin/分支名
-        git pull
+        git reset --hard origin branch_name
+        git pull origin branch_name
         【放弃本地修改，直接覆盖】
         git reset --hard
-        git pull
+        git pull origin branch_name
         
 
 # stable-diffusion for mac
