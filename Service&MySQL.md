@@ -164,6 +164,8 @@ check running service
 ## Install Nginx
         sudo apt-get update
         sudo apt-get install nginx
+## Nginx Path
+        cd /etc/nginx dir
 
 ## Set Nginx
         server {
