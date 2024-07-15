@@ -21,15 +21,20 @@ Update Server Soft
 
 ## Install Nodejs npm
 1) update soft
+
         > sudo apt-get update
         > sudo apt-get upgrade
-2) install
+3) install
+
         > sudo apt-get install nodejs npm
-4) check version
+5) check version
+
         > nodejs -v | npm -v
-5) install React package
+7) install React package
+
         npm install webpack webpack-cli --save-dev
-6) pay attenion
+9) pay attenion
+
         if some error out when 'npm run build', try run '5)'th first
 
 
@@ -39,6 +44,7 @@ Django DB
         python37 manage.py makemigrations | python37 manage.py makemigrations app_name
         python37 manage.py migrate
 - pay attention
+
         if tip 1146, that is smoeone table in db does not exsit, check any *.py, maybe models.py has been useing, it is earlier run than makemigrations / migrate.
   
 - 终极办法
