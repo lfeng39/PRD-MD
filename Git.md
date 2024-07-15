@@ -22,11 +22,17 @@
         git add .
         git commit -m 'dir'
         git push origin branchName
-- branch
+- check branch
 
           git branch
+- create branch
+
           git branch branch_name
+- change branch
+
           git checkout branch_name
+- delete branch
+
           git branch -D branch_name
 - other
 
