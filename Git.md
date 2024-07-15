@@ -24,17 +24,9 @@
         git push origin branchName
 - branch
 
-check
-
           git branch
-create
-
           git branch branch_name
-change branch
-
           git checkout branch_name
-delete branch
-
           git branch -D branch_name
 - other
 
