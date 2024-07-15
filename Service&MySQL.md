@@ -20,23 +20,23 @@ Update Server Soft
         pip install Django==4.2
 
 ## Install Nodejs npm
-        1) update soft
-                > sudo apt-get update
-                > sudo apt-get upgrade
-        3) sudo apt-get install nodejs npm
-        4) check version
-                > nodejs -v | npm -v
-        5) install React package
-                npm install webpack webpack-cli --save-dev
+### update soft
+        > sudo apt-get update
+        > sudo apt-get upgrade
+### sudo apt-get install nodejs npm
+### check version
+        > nodejs -v | npm -v
+5) install React package
+        npm install webpack webpack-cli --save-dev
 
 
 
 Django DB
-> 迁移数据
+- 迁移数据
 
         python37 manage.py makemigrations
         python37 manage.py migrate
-> 终极办法
+- 终极办法
 
         1) 清空app > migrations 下面除_init_.py以外的数据文件
         2) 清空MySQL数据，甚至数据表，更甚至app数据库
