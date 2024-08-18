@@ -180,9 +180,27 @@ check running service
                 proxy_set_header X-Forwarded-Proto $scheme;
             }
         }
+        server {
+                listen 80;
+                server_name meandmrleo.com www.meandmrleo.com;
+
+                location / {
+                        proxy_pass http://108.61.222.8:8000/;
+                        proxy_set_header Host $host;
+                        proxy_set_header X-Real-IP $remote_addr;
+                        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                        proxy_set_header X-Forwarded-Proto $scheme;
+                }
+        }
+        include /etc/nginx/conf.d/*.conf;
+        include /etc/nginx/sites-enabled/*;
+
 
         sudo systemctl start nginx | sudo service restart nginx | sudo systemctl restart nginx | sudo systemctl status nginx
 
+## Check port 80 used by who
+        sudo lsof -i :80
+        
 ## Check fire wall
         sudo ufw allow 80
 
