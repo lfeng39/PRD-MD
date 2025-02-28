@@ -3,7 +3,7 @@
 
           // ssh-keygen -t rsa -b 4096 -C "lf39@666.com"
           ssh-keygen -t ed25519 -C "your_email@example.com"
-- key save in pub, check it by cat
+- Save the SSH key into file of pub, check it by cat
 
           // cat ~/.ssh/id_rsa.pub
           cat ~/.ssh/id_ed25519.pub
