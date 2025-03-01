@@ -18,31 +18,31 @@
        
 
 # GIT
-- clone
+- Clone
 
         git clone url
-- pull & push
+- Pull & Push
 
         git pull origin branchName
         git add .
         git commit -m 'dir'
         git push origin branchName
-- check branch
+- Check branch
 
           git branch
-- create branch
+- Create branch
 
           git branch branch_name
-- change branch
+- Change branch
 
           git checkout branch_name
-- delete branch
+- Delete branch
 
           git branch -D branch_name
 - Check commit
 
           git reflog
-- other
+- Other
   
   -- back to one of commits that you want, ID from [reflog]
   
