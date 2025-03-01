@@ -36,7 +36,7 @@
 
           git reflog
 - other
--- back to some version that you want, ID from [reflog]
+-- back to one of commits that you want, ID from [reflog]
   
           git reset --hard ID
   
