@@ -1,13 +1,11 @@
 # Server Connect Git by SSH
-- Generate SSH key on Server
+- Generate SSH key on Devices
 
-          // ssh-keygen -t rsa -b 4096 -C "lf39@666.com"
           ssh-keygen -t ed25519 -C "your_email@example.com"
-- Save the SSH key into file of pub, check it by cat
+- Copy SSH key from:
 
-          // cat ~/.ssh/id_rsa.pub
-          cat ~/.ssh/id_ed25519.pub
-- copy key and paste to git -> settings ->
+          cat ~/.ssh/id_ed25519.pub [if no path has setted]
+- Copy SSH key and paste to git -> settings -> 'SSH and GPG keys'
   
         ssh-ed25519 %&*%^&*(*(*&*T*H(U*&TG
        
