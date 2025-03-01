@@ -3,8 +3,7 @@
 
           ssh-keygen -t ed25519 -C "your_email@example.com"
 - Copy SSH key from: [if no path has setted]
-
--- Linux
+          -- Linux
 
           cd root/.ssh/
           cat id_eded25519.pub
