@@ -8,7 +8,7 @@
 
           cd root/.ssh/
           cat id_eded25519.pub
--- Windows
+  -- Windows
           
           cd C:\Users\username\.ssh
           cat id_eded25519.pub
@@ -43,7 +43,7 @@
 
           git reflog
 - other
--- back to one of commits that you want, ID from [reflog]
+  -- back to one of commits that you want, ID from [reflog]
   
           git reset --hard ID
   
