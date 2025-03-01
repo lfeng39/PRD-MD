@@ -36,10 +36,7 @@
 
           git reflog
 - other
--- Check histroy
-  
-          git reflog
-  -- back to some version that you want []
+-- back to some version that you want, ID from [reflog]
   
           git reset --hard ID
   
