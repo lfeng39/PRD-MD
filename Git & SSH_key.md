@@ -32,14 +32,23 @@
 - delete branch
 
           git branch -D branch_name
-- other
+- Check commit
 
-        git fetch --all
-        git reset --hard origin branch_name
-        git pull origin branch_name
-        【放弃本地修改，直接覆盖】
-        git reset --hard
-        git pull origin branch_name
+          git reflog
+- other
+-- Check histroy
+  
+          git reflog
+  -- back to some version that you want []
+  
+          git reset --hard ID
+  
+          git fetch --all
+          git reset --hard origin branch_name
+          git pull origin branch_name
+
+          git reset --hard
+          git pull origin branch_name
         
 
 # stable-diffusion for mac
