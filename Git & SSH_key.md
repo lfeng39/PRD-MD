@@ -2,9 +2,9 @@
 - Generate SSH key on Devices
 
           ssh-keygen -t ed25519 -C "your_email@example.com"
-- Copy SSH key from:
+- Copy SSH key from: [if no path has setted]
 
-          cat ~/.ssh/id_ed25519.pub [if no path has setted]
+          cat ~/.ssh/id_ed25519.pub 
 - Copy SSH key and paste to git -> settings -> 'SSH and GPG keys'
   
         ssh-ed25519 %&*%^&*(*(*&*T*H(U*&TG
