@@ -1,7 +1,9 @@
 # Create a React App
 ## Create a file folder, we call it react app name
+
     mkdir quantify-ass
 ## Into the file folder 'quantify-ass', and Initialization
+
     cd quantify-ass
     npm init -y
 
