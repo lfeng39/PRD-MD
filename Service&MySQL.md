@@ -24,18 +24,18 @@ Update Server Soft
 
         sudo apt-get update
         sudo apt-get upgrade
-3) install
+2) install
 
         sudo apt-get install nodejs npm
-5) check version
+3) check version
 
         nodejs -v | npm -v
-7) install React package
+4) install React package
 
         npm install webpack webpack-cli --save-dev
-9) pay attenion
+5) pay attenion
 
-        if some error out when 'npm run build', try run '5)'th first
+        if some error out when 'npm run build', try '3) check version' first
 
 
 ## Django DB / makemigrations & migrate
@@ -50,10 +50,25 @@ Update Server Soft
   
 
 ## RunServer
-runserver
+### 2 methods could runserver
+- tmux
 
-        nohup python3 manage.py runserver 140.82.22.68:8000 &
-About fire wall, and relax port
+        sudo apt update
+        sudo apt install tmux -y
+- scrren
+
+        sudo apt update
+        sudo apt install screen -y
+### runserver
+        tmux new -s service1
+        screen -S service1
+### more
+        tmux / screen	手动管理多个终端	        进程不会随终端关闭而停止	⭐⭐⭐⭐⭐
+        nohup / &       简单临时后台运行	        终端关闭后进程依然运行	⭐⭐⭐
+        systemd	        服务器长期运行，开机自启	是	                ⭐⭐⭐⭐⭐
+        Docker	        容器化部署	        是	                ⭐⭐⭐⭐⭐
+
+## About fire wall, and relax port
 
         iptables -I INPUT -p tcp --dport 8000 -j ACCEPT
         
