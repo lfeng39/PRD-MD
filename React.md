@@ -4,5 +4,7 @@
 ## Into the file folder 'quantify-ass', and Initialization
     cd quantify-ass
     npm init -y
-## Install core package
+## Install react and core packages
     npm install react react-dom
+## Install webpack kits
+    npm install --save-dev webpack webpack-cli webpack-dev-server
