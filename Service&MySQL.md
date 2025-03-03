@@ -62,6 +62,11 @@ Update Server Soft
 ### runserver
         tmux new -s service1
         screen -S service1
+### into session
+        tmux attach -t service1
+        tmux a -t service1
+### kill session
+        tmux kill-session -t service1
 ### more
         tmux / screen	手动管理多个终端	        进程不会随终端关闭而停止	⭐⭐⭐⭐⭐
         nohup / &       简单临时后台运行	        终端关闭后进程依然运行	⭐⭐⭐
