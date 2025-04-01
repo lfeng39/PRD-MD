@@ -51,11 +51,11 @@ Update Server Soft
 
 ## RunServer
 ### 2 methods could runserver
-- tmux
+- install tmux
 
         sudo apt update
         sudo apt install tmux -y
-- scrren
+- install scrren
 
         sudo apt update
         sudo apt install screen -y
@@ -64,11 +64,16 @@ Update Server Soft
         screen -S service1
 ### check session
         tmux ls
+        screen -ls
 ### into session
         tmux attach -t service1
         tmux a -t service1
+        screen -r service1
 ### kill session
         tmux kill-session -t service1
+### exit session
+        tmux: 'Ctrl+B' > 'D'
+        screen: 'Ctrl+A' > 'D'
 ### more
         tmux / screen	手动管理多个终端	        进程不会随终端关闭而停止	⭐⭐⭐⭐⭐
         nohup / &       简单临时后台运行	        终端关闭后进程依然运行	⭐⭐⭐
