@@ -62,6 +62,8 @@ Update Server Soft
 ### runserver
         tmux new -s service1
         screen -S service1
+### check session
+        tmux ls
 ### into session
         tmux attach -t service1
         tmux a -t service1
