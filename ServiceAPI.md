@@ -11,3 +11,8 @@ ServiceAPI
     service/api/exchange_rate
     service/api/country_ip
     service/api/weather
+# Quant / StockAPI
+    service/api/us_index
+    service/api/us_symbol
+    service/api/cn_index
+    service/api/cn_symbol
