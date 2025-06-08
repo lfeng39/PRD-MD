@@ -1,5 +1,4 @@
 # ServiceAPI
-ServiceAPI
 
 # LittleKris / ServiceAPI
     service/api/exchange_rate
