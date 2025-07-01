@@ -124,11 +124,12 @@ DOS DB
         Maria[jal]> select * from JAL_account;
         Maria[jal]> delete from JAL_asininfo; (Query OK, 170 rows affected (0.008 sec))
         Maria[jal]> drop table JAL_asininfo;
+        Maria[jal]> rename table meandmrleo_listing to jal_listing;
 Set PassWord
 
         sudo mysql_secure_installation
         mysql -h 127.0.0.1 -P 3306 -u root
-        MariaDB [mysql]> set password for root@localhost = password('12820839');
+        MariaDB [mysql]> set password for root@localhost = password('12');
 Check Status
 
         sudo systemctl status mysql
