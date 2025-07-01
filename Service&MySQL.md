@@ -86,16 +86,16 @@ Update Server Soft
         
 
 ## Install MySQL | mysqlclient | MariaDB
-Install 'mysqlclient' on Debian 11 with any error, try install MySQL dependency package first
+### Install 'mysqlclient' on Debian 11 with any error, try install MySQL dependency package first
 
         sudo apt-get install default-libmysqlclient-dev
-Install MariaDB(packages) by what???
+### Install MariaDB(packages) by what???
 
         https://runebook.dev/zh/docs/mariadb/installing-mariadb-deb-files/index#installing-mariadb-packages-with-apt
-Install mysql-server by apt
+### Install mysql-server by apt
 
         sudo apt install mysql-server
-Download & Install Mysql
+### Download & Install Mysql
 > downloade
         
         wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
@@ -105,17 +105,23 @@ Download & Install Mysql
 > remove
 
         rm mysql-apt-config_0.8.24-1_all.deb
-Connect to DB
+### Connect to DB
 
         mysql -u root -p | sudo mysql | mysql
-Create User
+### Create User
 
         CREATE USER 'root'@'localhost' IDENTIFIED BY 'insert_password';
-Authorize
+### Authorize
 
         GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'insert_password' WITH GRANT OPTION;
-DOS DB
-
+### DOS DB
+> on PC
+        
+        1) cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+        2) mysql -u root -p
+> on Server
+        
+        mysql -u root -p
         Maria[]> show databases；
         Maria[]> create database jal；
         Maria[]> use jal；
@@ -125,31 +131,31 @@ DOS DB
         Maria[jal]> delete from JAL_asininfo; (Query OK, 170 rows affected (0.008 sec))
         Maria[jal]> drop table JAL_asininfo;
         Maria[jal]> rename table meandmrleo_listing to jal_listing;
-Set PassWord
+### Set PassWord
 
         sudo mysql_secure_installation
         mysql -h 127.0.0.1 -P 3306 -u root
         MariaDB [mysql]> set password for root@localhost = password('12');
-Check Status
+### Check Status
 
         sudo systemctl status mysql
-Stop Mysql Service
+### Stop Mysql Service
 
         sudo /etc/init.d/mysql stop 
-Start mysql without password
+### Start mysql without password
 
         sudo mysqld_safe --skip-grant-tables & 
-Restart
+### Restart
 
         sudo /etc/init.d/mysql restart
         sudo /etc/init.d/mysql start
-Progress
+### Progress
 
         ps aux |grep mysql
-Pill Progress
+### Pill Progress
 
         killall mysqld mysqld_safe
-Sudo
+### Sudo
 
         sudo service mysql status
         sudo service mysql stop
@@ -161,13 +167,13 @@ Sudo
 
 
 
-about port(Error: That port is already in use.)
+### about port(Error: That port is already in use.)
 
         check: netstat -ntlp
         ready: kill -9 PID
         action: kill -9 pid_number
 
-Log output is incomplete or unavailable
+### Log output is incomplete or unavailable
 
         journalctl --vacuum-size=1G
 
