@@ -122,6 +122,8 @@ Update Server Soft
 > on Server
         
         mysql -u root -p
+> enter MySql
+
         Maria[]> show databases；
         Maria[]> create database jal；
         Maria[]> use jal；
