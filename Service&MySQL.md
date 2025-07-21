@@ -43,6 +43,7 @@ Update Server Soft
 
         python37 manage.py makemigrations | python37 manage.py makemigrations app_name
         python37 manage.py migrate
+        python37 manage.py migrate --fake-initial
 - pay attention
 
         if tip 1146, that is smoeone table in db does not exsit, check any *.py
