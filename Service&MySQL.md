@@ -219,15 +219,40 @@ check running service
         }
         server {
                 listen 80;
-                server_name meandmrleo.com www.meandmrleo.com;
+		server_name meandmrleo.com www.meandmrleo.com;
+	
+		location / {
+			if ($request_method = 'OPTIONS') {
+				add_header Access-Control-Allow-Origin *;
+				add_header Access-Control-Allow-Methods 'GET, POST, DELETE, OPTIONS';
+				add_header Access-Control-Allow-Headers 'Content-Type, Authorization';
+				add_header Access-Control-Max-Age 1728000;
+				add_header Content-Length 0;
+				return 204;
+			}
 
-                location / {
-                        proxy_pass http://108.61.222.8:8000/;
-                        proxy_set_header Host $host;
-                        proxy_set_header X-Real-IP $remote_addr;
-                        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-                        proxy_set_header X-Forwarded-Proto $scheme;
-                }
+			proxy_pass http://0.0.0.0:8000/;
+			proxy_set_header Host $host;
+			proxy_set_header X-Real-IP $remote_addr;
+			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+			proxy_set_header X-Forwarded-Proto $scheme;
+
+			add_header Access-Control-Allow-Origin *;
+			add_header Access-Control-Allow-Methods 'GET, POST, DELETE, OPTIONS';
+			add_header Access-Control-Allow-Headers 'Content-Type, Authorization';
+			add_header Cross-Origin-Opener-Policy "unsafe-none";
+		}
+
+		location /static/ {
+			alias /root/E_trade/static/;
+		}
+		location /static/js/ {
+			alias /root/E_trade/frontend/build/static/js/;
+		}
+
+		location /media/ {
+			alias /root/E_trade/media/;
+		}
         }
         include /etc/nginx/conf.d/*.conf;
         include /etc/nginx/sites-enabled/*;
