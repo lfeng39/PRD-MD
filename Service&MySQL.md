@@ -5,8 +5,8 @@
 
 # Deployment service
 ## Deployment One Button
-> file: .deploy.sh
-> path: E_trade/.deploy.sh
+### file: .deploy.sh
+### path: E_trade/.deploy.sh
 
 		#!/bin/bash
 		git pull
