@@ -4,6 +4,15 @@
         Debian 11: JAL_3.9kr Dallas
 
 # Deployment service
+## Deployment One Button
+file: .deploy.sh
+path: E_trade/.deploy.sh
+
+		#!/bin/bash
+		git pull
+		cd frontend && npm run build && cd ..
+		python3 manage.py collectstatic --noinput
+		systemctl restart gunicorn
 ## Connect Server
 connect tools
 
