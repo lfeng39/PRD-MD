@@ -244,10 +244,7 @@ check running service
 		}
 
 		location /static/ {
-			alias /root/E_trade/static/;
-		}
-		location /static/js/ {
-			alias /root/E_trade/frontend/build/static/js/;
+			alias /root/E_trade/staticfiles/;
 		}
 
 		location /media/ {
