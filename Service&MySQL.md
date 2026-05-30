@@ -81,6 +81,10 @@ Update Server Soft
         systemd	        服务器长期运行，开机自启	是	                ⭐⭐⭐⭐⭐
         Docker	        容器化部署	        是	                ⭐⭐⭐⭐⭐
 
+## Set Static
+		python3 manage.py collectstatic
+
+
 ## About fire wall, and relax port
 
         iptables -I INPUT -p tcp --dport 8000 -j ACCEPT
