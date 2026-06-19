@@ -57,6 +57,7 @@
         
 # Merge JS sources after git pull
 - Run on service
+
           python3 manage.py collectstatic
 
 
