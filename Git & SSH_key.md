@@ -56,7 +56,7 @@
           git pull origin branch_name
         
 # Merge JS sources after git pull
-- Run on service
+- Run on server
 
           python3 manage.py collectstatic
 
