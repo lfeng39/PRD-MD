@@ -55,6 +55,10 @@
           git reset --hard
           git pull origin branch_name
         
+# Merge JS sources after git pull
+- Run on service
+          python3 manage.py collectstatic
+
 
 # stable-diffusion for mac
 ### Step 1: Install Homebrew
