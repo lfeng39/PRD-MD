@@ -52,15 +52,17 @@
 - Discard local modifications
 
   -- Meth 1
+  
           git fetch --all
           git reset --hard
           git pull origin branch_name
 
   -- Meth 2
           # 2.1 discard .pyc of local modification
-            git checkout -- app/__pycache__/ app/__pycache__/ 
-          
+  
+            git checkout -- app/__pycache__/ app/__pycache__/         
           # 2.2 discard all modifications of local（becareful，that's all）
+  
             git checkout -- .
           
           git pull origin branch_name
