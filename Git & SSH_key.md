@@ -21,6 +21,13 @@
 - Clone
 
         git clone url
+- Clone branch
+
+          # 只克隆默认分支的最新一次提交（最快）
+          git clone --depth 1 git@github.com:lfeng39/E_trade.git
+          
+          # 或者指定分支 + 只要最新一次提交
+          git clone --depth 1 --branch 你的分支名 git@github.com:lfeng39/E_trade.git
 - Pull & Push
 
         git pull origin branchName
