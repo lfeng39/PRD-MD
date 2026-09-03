@@ -14,26 +14,26 @@
           cat id_eded25519.pub
 - Copy SSH key and paste to git -> settings -> 'SSH and GPG keys'
   
-        ssh-ed25519 %&*%^&*(*(*&*T*H(U*&TG
+          ssh-ed25519 %&*%^&*(*(*&*T*H(U*&TG
        
 
 # GIT
 - Clone
 
-        git clone url
+          git clone url
 - Clone branch
 
-          # 只克隆默认分支的最新一次提交（最快）
-          git clone --depth 1 git@github.com:lfeng39/E_trade.git
+          # clone latest commit
+          git clone --depth 1 git@github.com:user_name/E_trade.git
           
-          # 或者指定分支 + 只要最新一次提交
-          git clone --depth 1 --branch 你的分支名 git@github.com:lfeng39/E_trade.git
+          # clone branch with latest commit
+          git clone --depth 1 --branch branch_name git@github.com:user_name/E_trade.git
 - Pull & Push
 
-        git pull origin branchName
-        git add .
-        git commit -m 'dir'
-        git push origin branchName
+          git pull origin branchName
+          git add .
+          git commit -m 'dir'
+          git push origin branchName
 - Check branch
 
           git branch
