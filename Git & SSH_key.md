@@ -51,18 +51,19 @@
           git reflog
 - Discard local modifications
 
+  -- Meth 1
           git fetch --all
           git reset --hard
           git pull origin branch_name
 
-          # 1. 丢弃所有冲突的 .pyc 文件的本地修改
-          git checkout -- ByJessie/__pycache__/ MEANDMRLEO/__pycache__/ Manager/__pycache__/ Order/__pycache__/ Service/__pycache__/ UserAccount/__pycache__/
+  -- Meth 2
+          # 2.1 discard .pyc of local modification
+            git checkout -- app/__pycache__/ app/__pycache__/ 
           
-          # 或者一次性丢弃所有未提交的修改（谨慎，会丢掉所有本地未提交改动）
-          # git checkout -- .
+          # 2.2 discard all modifications of local（becareful，that's all）
+            git checkout -- .
           
-          # 2. 再次拉取
-          git pull origin 1.2.4
+          git pull origin branch_name
 - Other
   
   -- back to one of commits that you want, ID from [reflog]
