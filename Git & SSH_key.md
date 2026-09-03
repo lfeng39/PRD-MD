@@ -51,13 +51,14 @@
           git reflog
 - Discard local modifications
 
-  -- Meth 1
+  > Method 1
   
           git fetch --all
           git reset --hard
           git pull origin branch_name
 
-  -- Meth 2
+  > Method 2
+
           # 2.1 discard .pyc of local modification
   
             git checkout -- app/__pycache__/ app/__pycache__/         
