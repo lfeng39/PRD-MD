@@ -50,13 +50,11 @@
 
           git reflog
 - Discard local modifications
-
   ## Method 1
   
           git fetch --all
           git reset --hard
           git pull origin branch_name
-
   ## Method 2
 
           ### 2.1 discard .pyc of local modification
