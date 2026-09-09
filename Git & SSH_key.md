@@ -1,8 +1,8 @@
 # Server Connect Git by SSH
-## Generate SSH key on Devices
+### Generate SSH key on Devices
 
           ssh-keygen -t ed25519 -C "your_email@example.com"
-## Copy SSH key from: [if no path has setted]
+### Copy SSH key from: [if no path has setted]
 
   -- Linux
 
@@ -12,57 +12,57 @@
           
           cd C:\Users\username\.ssh
           cat id_eded25519.pub
-## Copy SSH key and paste to git -> settings -> 'SSH and GPG keys'
+### Copy SSH key and paste to git -> settings -> 'SSH and GPG keys'
   
           ssh-ed25519 %&*%^&*(*(*&*T*H(U*&TG
        
 
 # GIT
-## Clone
+### Clone
 
           git clone url
-## Clone branch
+### Clone branch
 
           # clone latest commit
           git clone --depth 1 git@github.com:user_name/E_trade.git
           
           # clone branch with latest commit
           git clone --depth 1 --branch branch_name git@github.com:user_name/E_trade.git
-## Pull & Push
+### Pull & Push
 
           git pull origin branchName
           git add .
           git commit -m 'dir'
           git push origin branchName
-## Check branch
+### Check branch
 
           git branch
-## Create branch
+### Create branch
 
           git branch branch_name
-## Change branch
+### Change branch
 
           git checkout branch_name
-## Delete branch
+### Delete branch
 
           git branch -D branch_name
-## Check commit
+### Check commit
 
           git reflog
-## Discard local modifications
+### Discard local modifications
 
 - Method 1
-> 1.1
++ 1.1
           git fetch --all
           git reset --hard
           git pull origin branch_name
 
 - Method 2
   
->> 2.1 discard .pyc of local modification
++ 2.1 discard .pyc of local modification
   
           git checkout -- app/__pycache__/ app/__pycache__/         
-++ 2.2 discard all modifications of local（becareful，that's all）
++ 2.2 discard all modifications of local（becareful，that's all）
   
           git checkout -- .
           git pull origin branch_name
