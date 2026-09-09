@@ -54,6 +54,7 @@
 - Method 1
 
 -- 1.1
+
           git fetch --all
           git reset --hard
           git pull origin branch_name
