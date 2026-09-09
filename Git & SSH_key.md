@@ -52,17 +52,17 @@
 ## Discard local modifications
 
 - Method 1
-  
+> 1.1
           git fetch --all
           git reset --hard
           git pull origin branch_name
 
 - Method 2
   
--- 2.1 discard .pyc of local modification
+>> 2.1 discard .pyc of local modification
   
           git checkout -- app/__pycache__/ app/__pycache__/         
--- 2.2 discard all modifications of local（becareful，that's all）
+++ 2.2 discard all modifications of local（becareful，that's all）
   
           git checkout -- .
           git pull origin branch_name
