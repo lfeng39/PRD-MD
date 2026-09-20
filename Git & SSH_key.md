@@ -21,9 +21,13 @@
           pbcopy < ~/.ssh/id_ed25519.pub
 ### Copy SSH key and paste to git -> settings -> 'SSH and GPG keys'
   
-ex: ssh-ed25519 %&*%^&*(*(*&*T*H(U*&TG
-copy command:
+#### ex: ssh-ed25519 %&*%^&*(*(*&*T*H(U*&TG
+#### copy command:
+  -- Linux / Windows:
+          
           cat ~/.ssh/id_ed25519.pub
+  -- Mac:
+          
           pbcopy < ~/.ssh/id_ed25519.pub
 
 # GIT
@@ -40,15 +44,41 @@ copy command:
 ### Pull & Push
 
           git pull origin branchName
-          git add .
+          git add . / git add folde/file
           git commit -m 'dir'
           git push origin branchName
+### Manage Version
+##### 1) Create local new_branch & remote new_branch
+
+          git checkout -b new_branch_name
+          git add . / git add folde/file
+          git commit -m 'new branch'
+          git push -u origin new_branch_name
+#### 2) Commit & Push new code
+
+          git add . / git add folde/file
+          git commit -m 'update ***'
+          git push
+#### 3) Checkout branch main & merge new_branch
+
+          git checkout main
+          git merge new_branch_name
+          git push origin main
+#### 4）Tag Version(on branch main)
+
+          git tag version_number
+          git push origin version_number
+#### 5) Del branch & Repeat
+
+          git branch -d new_branch_name
+          git push origin --delete new_branch_name
 ### Check branch
 
           git branch
-### Create branch
+### Create branch & Create remote branch
 
           git branch branch_name
+          git push -u origin branch_name
 ### Change branch
 
           git checkout branch_name
