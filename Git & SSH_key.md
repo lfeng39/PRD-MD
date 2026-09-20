@@ -8,14 +8,23 @@
 
           cd root/.ssh/
           cat id_eded25519.pub
+          
+          cat ~/.ssh/id_ed25519.pub（terminal mad）
   -- Windows
           
           cd C:\Users\username\.ssh
           cat id_eded25519.pub
+
+          cat ~/.ssh/id_ed25519.pub（terminal mad）
+  -- Mac
+
+          pbcopy < ~/.ssh/id_ed25519.pub
 ### Copy SSH key and paste to git -> settings -> 'SSH and GPG keys'
   
-          ssh-ed25519 %&*%^&*(*(*&*T*H(U*&TG
-       
+ex: ssh-ed25519 %&*%^&*(*(*&*T*H(U*&TG
+copy command:
+          cat ~/.ssh/id_ed25519.pub
+          pbcopy < ~/.ssh/id_ed25519.pub
 
 # GIT
 ### Clone
