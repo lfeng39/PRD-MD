@@ -133,6 +133,9 @@ Update Server Soft
         
         1) cd C:\Program Files\MySQL\MySQL Server 8.0\bin
         2) mysql -u root -p
+> on MAC
+
+		/usr/local/mysql/bin/mysql -u root -p
 > on Server
         
         mysql -u root -p
