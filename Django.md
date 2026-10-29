@@ -1,3 +1,9 @@
+# Models & makemigrations & migrate
+## QA
+
+        Q: django.db.utils.OperationalError: (1050, "Table 'table_name' already exists")
+        A: python manage.py migrate table_name 0001 --fake
+
 # Request
 ## if request.method == 'GET' 'POST'
 判断request请求类型
